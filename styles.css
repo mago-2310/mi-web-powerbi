@@ -131,19 +131,41 @@ button:hover {
     text-align: center;
 }
 
-/* Formulario dentro de la sección contacto */
+/* Ajustamos los estilos de la sección "contacto" para que todo quede bien alineado */
+.contacto {
+    position: relative;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilo del formulario */
 .contacto form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-bottom: 50px; /* Espacio para que el botón no quede pegado al final */
+    margin-bottom: 50px; /* Espacio para el botón */
+    max-width: 500px; /* Controlamos el ancho del formulario */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Posiciona el botón de manera fija al final de la sección de contacto */
+/* Estilo de los campos de entrada (nombre, correo, mensaje) */
+.contacto input, .contacto textarea {
+    width: 100%; /* Aseguramos que ocupen todo el ancho disponible */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+    margin-bottom: 10px; /* Un pequeño margen entre los campos */
+}
+
+/* Botón de enviar */
 .contacto button {
-    position: absolute; /* Lo posiciona de forma absoluta dentro del contenedor */
-    bottom: 20px; /* Lo coloca 20px por encima del borde inferior de la sección */
+    position: absolute;
+    bottom: 20px; /* Lo coloca al final de la sección */
     left: 50%;
     transform: translateX(-50%); /* Centra el botón horizontalmente */
     padding: 12px 24px;
@@ -153,9 +175,11 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* Asegura que el botón ocupe el ancho del formulario */
+    max-width: 300px; /* Limita el ancho máximo del botón */
 }
 
-/* Si el contenedor de la sección "contacto" tiene mucho contenido, se ajusta para que no se solape */
+/* Media Queries para mejorar la visualización en pantallas pequeñas */
 @media (max-width: 768px) {
     .contacto {
         padding: 20px;
@@ -163,6 +187,11 @@ button:hover {
 
     .contacto form {
         margin-bottom: 20px;
+        width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+    }
+
+    .contacto button {
+        max-width: 100%; /* El botón ocupará todo el ancho disponible en pantallas pequeñas */
     }
 }
 
