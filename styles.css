@@ -164,10 +164,10 @@ button:hover {
 
 /* Botón de enviar */
 .contacto button {
-    position: absolute;
+    position: relative;
     bottom: 20px; /* Lo coloca al final de la sección */
-    left: 50%;
-    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    left: auto;
+    transform: none; /* Centra el botón horizontalmente */
     padding: 12px 24px;
     background-color: #4CAF50;
     color: white;
