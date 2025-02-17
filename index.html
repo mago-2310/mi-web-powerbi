@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios de Reportes en Power BI</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Reportes en Power BI</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -33,12 +24,12 @@
     
     <section class="metodologia">
         <h2>Mi Metodología</h2>
-        <p>Desde la planificación hasta la implementación, trabajo contigo en cada paso para asegurar que tus necesidades sean satisfechas.</p>
+        <p>Te ayudo a crear tu primer reporte en Power BI de manera sencilla, utilizando solo hojas de cálculo de Excel como base de datos. No necesitas conocimientos avanzados ni sistemas complejos. Desde la planificación hasta la implementación, trabajamos juntos para transformar tus datos en visualizaciones dinámicas y accionables..</p>
     </section>
     
     <section class="grafico">
         <h2>Ejemplo de Análisis de Datos</h2>
-        <canvas id="miGrafico"></canvas>
+        <img src="Screenshot_1.png" alt="Ejemplo de Reporte Power BI" style="width: 100%; max-width: 800px; display: block; margin: auto; border: 2px solid #ddd; border-radius: 10px;">
     </section>
     
     <section class="beneficios">
@@ -53,22 +44,24 @@
     
     <section class="contacto">
         <h2>Contáctame</h2>
-        <form>
+        <form action="https://formspree.io/f/xvgzvzvq" method="POST">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre" name="nombre" required>
             
             <label for="email">Correo:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
             
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" rows="4" required></textarea>
+            <textarea id="mensaje" name="message" rows="4" required></textarea>
             
             <button type="submit">Enviar</button>
         </form>
-        <p>O contáctame por <a href="https://wa.me/tu-numero" target="_blank">WhatsApp</a></p>
+        <p>O contáctame por WhatsApp:</p>
+        <a href="https://wa.me/989683457?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%20de%20Power%20BI" 
+           target="_blank" 
+           style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+           📲 Contactar por WhatsApp
+        </a>
     </section>
-    
-    <script src="script.js"></script>
 </body>
 </html>
-
