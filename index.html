@@ -11,7 +11,7 @@
         <h1>Servicios de Reportes en Power BI</h1>
         <p>Transforma tus datos de Excel en reportes dinámicos y visuales</p>
     </header>
-    
+
     <section class="servicios">
         <h2>¿Qué ofrezco?</h2>
         <ul>
@@ -21,84 +21,78 @@
             <li>✅ Optimización de bases de datos</li>
         </ul>
     </section>
-    
+
     <section class="metodologia">
-    <h2>Mi Metodología</h2>
-    <p>Te ayudo a crear tu primer reporte en Power BI de manera sencilla, utilizando solo hojas de cálculo de Excel como base de datos. No necesitas conocimientos avanzados ni sistemas complejos. Desde la planificación hasta la implementación, trabajamos juntos para transformar tus datos en visualizaciones dinámicas y accionables..</p>
-</section>
-    
-<section class="ejemplos">
-    <h2>Ejemplos de Reportes en Power BI</h2>
-    <p>Aquí puedes ver algunos de los reportes que he desarrollado a lo largo de los años.</p>
+        <h2>Mi Metodología</h2>
+        <p>Te ayudo a crear tu primer reporte en Power BI de manera sencilla, utilizando solo hojas de cálculo de Excel como base de datos. No necesitas conocimientos avanzados ni sistemas complejos. Desde la planificación hasta la implementación, trabajamos juntos para transformar tus datos en visualizaciones dinámicas y accionables..</p>
+    </section>
 
-    <div class="carousel-container">
-        <!-- Carrusel de imágenes -->
-        <div class="carousel">
-            <div class="carousel-item">
-                <h3>Reporte de Rentabilización de Excedentes de Caja</h3>
-                <img src="ejemplo1.png" alt="Reporte de Rentabilización de Excedentes de Caja" class="reporte-img">
+    <section class="ejemplos">
+        <h2>Ejemplos de Reportes en Power BI</h2>
+        <p>Aquí puedes ver algunos de los reportes que he desarrollado a lo largo de los años.</p>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <h3>Reporte de Rentabilización de Excedentes de Caja</h3>
+                    <img src="ejemplo1.png" alt="Reporte de Rentabilización de Excedentes de Caja" class="reporte-img">
+                </div>
+                <div class="carousel-item">
+                    <h3>Reporte de Antigüedad de Cuentas por Cobrar</h3>
+                    <img src="ejemplo2.png" alt="Reporte de Antigüedad de Cuentas por Cobrar" class="reporte-img">
+                </div>
+                <div class="carousel-item">
+                    <h3>Reporte de Control de Gastos Operativos</h3>
+                    <img src="ejemplo3.png" alt="Reporte de Control de Gastos Operativos" class="reporte-img">
+                </div>
             </div>
-            <div class="carousel-item">
-                <h3>Reporte de Antigüedad de Cuentas por Cobrar</h3>
-                <img src="ejemplo2.png" alt="Reporte de Antigüedad de Cuentas por Cobrar" class="reporte-img">
-            </div>
-            <div class="carousel-item">
-                <h3>Reporte de Control de Gastos Operativos</h3>
-                <img src="ejemplo3.png" alt="Reporte de Control de Gastos Operativos" class="reporte-img">
-            </div>
+
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
+    </section>
 
-        <!-- Controles del carrusel -->
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-</section>
-
-    
     <section class="beneficios">
         <h2>Beneficios de mis Servicios</h2>
         <ul>
-            <li>📈 Mejora en la toma de decisiones</li>
+            <li> Mejora en la toma de decisiones</li>
             <li>⏳ Ahorro de tiempo en análisis de datos</li>
-            <li>📊 Visualizaciones claras y efectivas</li>
-            <li>🔒 Seguridad y confidencialidad de la información</li>
+            <li> Visualizaciones claras y efectivas</li>
+            <li> Seguridad y confidencialidad de la información</li>
         </ul>
     </section>
-    
+
     <section class="contacto">
-    <h2>Contáctame</h2>
-    <form action="https://formspree.io/f/xvgzvzvq" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="message" rows="4" required></textarea>
-        <button type="submit">Enviar</button> <!-- Este es el botón que ahora está en la sección correcta -->
-    </form>
-    <p>O contáctame por WhatsApp:</p>
-    <a href="https://wa.me/989683457?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%20de%20Power%20BI" 
-       target="_blank" 
-       style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-       📲 Contactar por WhatsApp
-    </a>
-</section>
-<script>
-    let index = 0;
+        <h2>Contáctame</h2>
+        <form action="https://formspree.io/f/xvgzvzvq" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    function moveSlide(step) {
-        const items = document.querySelectorAll('.carousel-item');
-        const totalItems = items.length;
-        index = (index + step + totalItems) % totalItems; // Asegura que el índice no salga del rango
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
 
-        // Mueve el carrusel según el índice
-        const carousel = document.querySelector('.carousel');
-        carousel.style.transform = `translateX(${-index * 100}%)`;
-    }
-</script>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>O contáctame por WhatsApp:</p>
+        <a href="https://wa.me/989683457?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%20de%20Power%20BI"
+            target="_blank"
+            style="display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+             Contactar por WhatsApp
+        </a>
+    </section>
+    <script>
+        let index = 0;
 
+        function moveSlide(step) {
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+            index = (index + step + totalItems) % totalItems;
+
+            const carousel = document.querySelector('.carousel');
+            carousel.style.transform = `translateX(${-index * 100}%)`;
+        }
+    </script>
 </body>
 </html>
-
