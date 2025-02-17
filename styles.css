@@ -67,3 +67,59 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Estilos del carrusel */
+.carousel-container {
+    position: relative;
+    width: 125%; /* Aumenta el tamaño un 25% más */
+    max-width: 1000px; /* Puedes ajustar el tamaño máximo si es necesario */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.reporte-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilo para los botones de navegación */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
