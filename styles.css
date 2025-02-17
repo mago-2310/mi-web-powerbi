@@ -123,24 +123,30 @@ button:hover {
     right: 10px;
 }
 
-/* Aseguramos que el contenedor de la sección contacto tenga suficiente espacio */
+/* Aseguramos que la sección "contacto" esté bien estructurada */
 .contacto {
-    padding: 40px 20px;  /* Ajusta el espacio interior de la sección */
+    position: relative; /* Esto permite que el botón se posicione en relación a la sección */
+    padding: 40px 20px;
     box-sizing: border-box;
-    text-align: center; /* Centra el contenido */
+    text-align: center;
 }
 
-/* Se asegura que el formulario y sus elementos se ajusten bien */
+/* Formulario dentro de la sección contacto */
 .contacto form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos en el formulario */
+    align-items: center;
     gap: 15px;
+    margin-bottom: 50px; /* Espacio para que el botón no quede pegado al final */
 }
 
-/* Asegura que los botones se mantengan centrados y con el tamaño adecuado */
+/* Posiciona el botón de manera fija al final de la sección de contacto */
 .contacto button {
-    padding: 10px 20px;
+    position: absolute; /* Lo posiciona de forma absoluta dentro del contenedor */
+    bottom: 20px; /* Lo coloca 20px por encima del borde inferior de la sección */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    padding: 12px 24px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -149,24 +155,15 @@ button:hover {
     font-size: 16px;
 }
 
-/* Asegura que el contenido de la sección no se mueva al hacer zoom */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-h1, h2, p {
-    margin: 10px 0;
-}
-
-/* Evita que el zoom afecte el layout con un ajuste de max-width */
+/* Si el contenedor de la sección "contacto" tiene mucho contenido, se ajusta para que no se solape */
 @media (max-width: 768px) {
     .contacto {
         padding: 20px;
     }
+
+    .contacto form {
+        margin-bottom: 20px;
+    }
 }
+
 
