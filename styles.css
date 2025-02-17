@@ -71,7 +71,7 @@ button:hover {
 /* Estilos del carrusel */
 .carousel-container {
     position: relative;
-    width: 125%; /* Aumenta el tamaño un 25% más */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% de su contenedor padre */
     max-width: 1000px; /* Puedes ajustar el tamaño máximo si es necesario */
     margin: auto;
     overflow: hidden;
@@ -85,14 +85,15 @@ button:hover {
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 100%; /* Esto asegura que cada imagen ocupe el 100% del contenedor */
     box-sizing: border-box;
     text-align: center;
 }
 
 .reporte-img {
-    width: 100%;
-    max-width: 100%;
+    width: 100%; /* Asegura que la imagen ocupe el 100% del tamaño de su contenedor */
+    max-width: 100%; /* Previene que las imágenes se estiren más allá de su tamaño natural */
+    height: auto; /* Esto mantiene la proporción de las imágenes */
     border-radius: 10px;
 }
 
