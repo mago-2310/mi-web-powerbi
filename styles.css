@@ -37,24 +37,29 @@ li {
     margin-bottom: 10px;
 }
 
-form {
+/* Estilos del formulario */
+.contacto form {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+    max-width: 500px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
 }
 
-label {
+.contacto label {
     margin-top: 10px;
     text-align: left;
 }
 
-input, textarea {
+.contacto input,
+.contacto textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
+.contacto button {
     background-color: #007bff;
     color: white;
     padding: 10px;
@@ -64,16 +69,16 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+.contacto button:hover {
     background-color: #0056b3;
 }
 
 /* Estilos del carrusel */
 .carousel-container {
     position: relative;
-    width: 100%; /* Asegura que el contenedor ocupe el 100% de su contenedor padre */
-    max-width: 1000px; /* Puedes ajustar el tamaño máximo si es necesario */
-    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -85,20 +90,21 @@ button:hover {
 }
 
 .carousel-item {
-    min-width: 100%; /* Esto asegura que cada imagen ocupe el 100% del contenedor */
+    min-width: 100%;
     box-sizing: border-box;
     text-align: center;
 }
 
 .reporte-img {
-    width: 100%; /* Asegura que la imagen ocupe el 100% del tamaño de su contenedor */
-    max-width: 100%; /* Previene que las imágenes se estiren más allá de su tamaño natural */
-    height: auto; /* Esto mantiene la proporción de las imágenes */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
 /* Estilo para los botones de navegación */
-button {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -111,7 +117,8 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -122,77 +129,3 @@ button:hover {
 .next {
     right: 10px;
 }
-
-/* Aseguramos que la sección "contacto" esté bien estructurada */
-.contacto {
-    position: relative; /* Esto permite que el botón se posicione en relación a la sección */
-    padding: 40px 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* Ajustamos los estilos de la sección "contacto" para que todo quede bien alineado */
-.contacto {
-    position: relative;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* Estilo del formulario */
-.contacto form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 50px; /* Espacio para el botón */
-    max-width: 500px; /* Controlamos el ancho del formulario */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Estilo de los campos de entrada (nombre, correo, mensaje) */
-.contacto input, .contacto textarea {
-    width: 100%; /* Aseguramos que ocupen todo el ancho disponible */
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
-    margin-bottom: 10px; /* Un pequeño margen entre los campos */
-}
-
-/* Botón de enviar */
-.contacto button {
-    position: relative;
-    bottom: 20px; /* Lo coloca al final de la sección */
-    left: auto;
-    transform: none; /* Centra el botón horizontalmente */
-    padding: 12px 24px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%; /* Asegura que el botón ocupe el ancho del formulario */
-    max-width: 300px; /* Limita el ancho máximo del botón */
-}
-
-/* Media Queries para mejorar la visualización en pantallas pequeñas */
-@media (max-width: 768px) {
-    .contacto {
-        padding: 20px;
-    }
-
-    .contacto form {
-        margin-bottom: 20px;
-        width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
-    }
-
-    .contacto button {
-        max-width: 100%; /* El botón ocupará todo el ancho disponible en pantallas pequeñas */
-    }
-}
-
-
