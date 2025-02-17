@@ -31,6 +31,34 @@
         <h2>Ejemplo de Análisis de Datos</h2>
         <img src="Screenshot_1.png" alt="Ejemplo de Reporte Power BI" style="width: 100%; max-width: 800px; display: block; margin: auto; border: 2px solid #ddd; border-radius: 10px;">
     </section>
+
+<section class="ejemplos">
+    <h2>Ejemplos de Reportes en Power BI</h2>
+    <p>Aquí puedes ver algunos de los reportes que he desarrollado a lo largo de los años.</p>
+
+    <div class="carousel-container">
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3>Reporte de Rentabilización de Excedentes de Caja</h3>
+                <img src="ejemplo1.png" alt="Reporte de Rentabilización de Excedentes de Caja" class="reporte-img">
+            </div>
+            <div class="carousel-item">
+                <h3>Reporte de Antigüedad de Cuentas por Cobrar</h3>
+                <img src="ejemplo2.png" alt="Reporte de Antigüedad de Cuentas por Cobrar" class="reporte-img">
+            </div>
+            <div class="carousel-item">
+                <h3>Reporte de Control de Gastos Operativos</h3>
+                <img src="ejemplo3.png" alt="Reporte de Control de Gastos Operativos" class="reporte-img">
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
     
     <section class="beneficios">
         <h2>Beneficios de mis Servicios</h2>
@@ -63,5 +91,20 @@
            📲 Contactar por WhatsApp
         </a>
     </section>
+<script>
+    let index = 0;
+
+    function moveSlide(step) {
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+        index = (index + step + totalItems) % totalItems; // Asegura que el índice no salga del rango
+
+        // Mueve el carrusel según el índice
+        const carousel = document.querySelector('.carousel');
+        carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+
 </body>
 </html>
+
